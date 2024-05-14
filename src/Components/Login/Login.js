@@ -67,7 +67,7 @@ const Login = () => {
                         <label htmlFor="email">Email</label>
                         <input value={email} onChange={(e) => setEmail(e.target.value)} type="email" name="email" id="email" className="form-control" placeholder="Enter your email" aria-describedby="helpId" />
                     </div>
-//write logic code for password input box
+
 <div className="form-group">
                <label htmlFor="password">Password</label>
                <input

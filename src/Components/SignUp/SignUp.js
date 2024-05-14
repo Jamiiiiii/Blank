@@ -63,8 +63,6 @@ const SignUp = () => {
                  {showerr && <div className="err" style={{ color: 'red' }}>{showerr}</div>}
                         </div>
 
-//apply logic here for other elements such as name, phone and password to take user information
-
 <div className="form-group">
            <label htmlFor="name">Name</label>
            <input value={name} type="text" onChange={(e) => setName(e.target.value)} name="name" id="name" className="form-control" placeholder="Enter your name" aria-describedby="helpId" />
@@ -76,8 +74,10 @@ const SignUp = () => {
        <div className="form-group">
            <label htmlFor="password">Password</label>
            <input value={password} onChange={(e) => setPassword(e.target.value)} name="password" id="password" className="form-control" placeholder="Enter your password" aria-describedby="helpId" />
-
        </div>
+       <div className="btn-group">
+                <button type="submit" className="btn btn-primary mb-2 mr-1 waves-effect waves-light">Sign Up</button>
+              </div>
          </form>
          </div>
          </div>
